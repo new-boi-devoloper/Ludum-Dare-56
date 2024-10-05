@@ -1,5 +1,5 @@
-﻿using _Source.Camera;
-using _Source.PlayerScripts;
+﻿using _Source.PlayerScripts;
+using _Source.TestPlayerScripts;
 using UnityEngine;
 
 namespace _Source.GeneralManagers
@@ -9,10 +9,10 @@ namespace _Source.GeneralManagers
         [SerializeField] private Player player;
         [SerializeField] private InputListener inputListener;
         [SerializeField] private FixCameraPosition cameraPosition;
+        private PlayerControls playerControls;
 
         private PlayerInvoker playerInvoker;
         private PlayerMovement playerMovement;
-        private PlayerControls playerControls;
 
         private void Awake()
         {

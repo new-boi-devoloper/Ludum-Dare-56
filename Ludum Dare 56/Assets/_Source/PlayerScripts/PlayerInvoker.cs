@@ -1,13 +1,13 @@
-using _Source.Camera;
+using _Source.TestPlayerScripts;
 using UnityEngine;
 
 namespace _Source.PlayerScripts
 {
     public class PlayerInvoker
     {
-        private PlayerMovement _playerMovement;
-        private Player _player;
-        private FixCameraPosition _cameraPosition;
+        private readonly FixCameraPosition _cameraPosition;
+        private readonly Player _player;
+        private readonly PlayerMovement _playerMovement;
 
         public PlayerInvoker(Player player, FixCameraPosition cameraPosition, PlayerMovement playerMovement)
         {

@@ -6,9 +6,16 @@ namespace _Source.PlayerScripts
     {
         [field: SerializeField] public float SensX { get; private set; }
         [field: SerializeField] public float SensY { get; private set; }
+        private PlayerControls _playerControls;
 
         private PlayerInvoker _playerInvoker;
-        private PlayerControls _playerControls;
+
+        private void Update()
+        {
+            GetInputValues();
+            HorizontalMouseMove();
+            VerticalMouseMove();
+        }
 
         public void Initialize(PlayerInvoker playerInvoker, PlayerControls playerControls)
         {
@@ -29,13 +36,6 @@ namespace _Source.PlayerScripts
             Cursor.visible = true;
         }
 
-        private void Update()
-        {
-            GetInputValues();
-            HorizontalMouseMove();
-            VerticalMouseMove();
-        }
-
         private float HorizontalMouseMove()
         {
             var mouseInputHorizontal = _playerControls.Player.Look.ReadValue<Vector2>().y * Time.deltaTime * SensY;
@@ -48,7 +48,7 @@ namespace _Source.PlayerScripts
             return mouseInputVertical;
         }
 
-        void GetInputValues()
+        private void GetInputValues()
         {
             _playerInvoker.HandleMouseInput(HorizontalMouseMove(), VerticalMouseMove());
         }

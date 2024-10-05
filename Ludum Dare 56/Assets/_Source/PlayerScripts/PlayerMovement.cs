@@ -4,8 +4,8 @@ namespace _Source.PlayerScripts
 {
     public class PlayerMovement
     {
-        private float _yRotation;
         private float _xRotation;
+        private float _yRotation;
 
         public void Jump(float jumpForce, Rigidbody playerRb)
         {
