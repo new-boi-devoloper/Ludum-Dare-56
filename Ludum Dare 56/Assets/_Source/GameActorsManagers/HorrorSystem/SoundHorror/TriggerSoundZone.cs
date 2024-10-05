@@ -2,25 +2,26 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using _Source.GameActorsManagers.HorrorSystem;
+using _Source.GameActorsManagers.HorrorSystem.CreatureSound;
 using _Source.GameActorsManagers.HorrorSystem.SoundHorror;
 using _Source.Utils;
 using UnityEngine;
 
 public class TriggerSoundZone : MonoBehaviour
 {
-    private HorrorSoundSlot SpawnObject;
-    
+    private HorrorSoundSlot _horrorSoundSlot;
+
     private void Start()
     {
-        SpawnObject = gameObject.GetComponentInChildren<HorrorSoundSlot>();
+        // Ищем дочерний объект с компонентом HorrorUnitSlot
+        _horrorSoundSlot = GetComponentInChildren<HorrorSoundSlot>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject)) ;
+        if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject))
         {
-            var horrorSlot = SpawnObject.GetComponent<HorrorSoundSlot>();
-            horrorSlot.ActivateHorror();
+            _horrorSoundSlot.ActivateHorror();
         }
     }
 }

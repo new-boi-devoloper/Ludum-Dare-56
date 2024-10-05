@@ -5,7 +5,7 @@ using TMPro;
 public class PlayerInteraction : MonoBehaviour
 {
     public Camera mainCam;
-    public float interactionDistance = 10f;
+    [field: SerializeField] public float interactionDistance { get; private set; }
 
     public GameObject interactionUI;
     public TextMeshProUGUI interactionText;

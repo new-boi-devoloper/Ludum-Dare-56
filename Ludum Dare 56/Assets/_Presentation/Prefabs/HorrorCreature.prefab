@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7449012497582296693}
   - component: {fileID: 6571884409897953330}
   - component: {fileID: 6843553883958751342}
-  - component: {fileID: 8356737896339035143}
+  - component: {fileID: 5140039451351174357}
   m_Layer: 0
   m_Name: HorrorCreature
   m_TagString: Untagged
@@ -112,16 +112,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8356737896339035143
-MonoBehaviour:
+--- !u!135 &5140039451351174357
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6944665166102000548}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d71aee49f1984f5a93cce416890f656e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <HorrorPathSoSo>k__BackingField: {fileID: 11400000, guid: c3a273fd73a3a3545b8fdcf708876ed0, type: 2}
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
