@@ -67,8 +67,8 @@ namespace _Source.TestPlayerScripts
 
         private void PlayerMove()
         {
-            _moveDirection = Orientation.forward * _verticalInput +
-                             Orientation.right * _horizontalInput;
+            _moveDirection = (Orientation.forward * _verticalInput) +
+                             (Orientation.right * _horizontalInput);
             _rb.AddForce(_moveDirection * (PlayerSpeed * 5f), ForceMode.Force);
         }
 
