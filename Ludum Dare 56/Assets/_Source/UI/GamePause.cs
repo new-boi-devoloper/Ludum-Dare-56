@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GamePause : MonoBehaviour
 {
     [SerializeField] private GameObject Pause;
     [SerializeField] private FirstPersonController firstPerson;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -16,6 +15,5 @@ public class GamePause : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        
     }
 }

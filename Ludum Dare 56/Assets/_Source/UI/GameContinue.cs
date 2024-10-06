@@ -1,10 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameContinue : MonoBehaviour
 {
     [SerializeField] private FirstPersonController firstPerson;
+
     public void Continue()
     {
         firstPerson.cameraCanMove = true;
