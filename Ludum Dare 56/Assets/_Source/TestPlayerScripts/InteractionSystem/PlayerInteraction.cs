@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Source.TestPlayerScripts.InteractionSystem;
 using UnityEngine;
 using TMPro;
-public class PlayerInteraction : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour, IInteractionController
 {
     public Camera mainCam;
     [field: SerializeField] public float interactionDistance { get; private set; }
@@ -40,4 +41,6 @@ public class PlayerInteraction : MonoBehaviour
 
         interactionUI.SetActive(hitSomething);
     }
+
+    public Item HeldItem { get; set; }
 }

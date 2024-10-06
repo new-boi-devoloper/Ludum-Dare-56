@@ -6,23 +6,21 @@ namespace _Source.GeneralManagers
 {
     public class Bootstrapper : MonoBehaviour
     {
-        [SerializeField] private Player player;
-        [SerializeField] private InputListener inputListener;
-        [SerializeField] private FixCameraPosition cameraPosition;
-        private PlayerControls playerControls;
+        public PlayerInteraction playerInteraction;
+        public AltarSlot[] altarSlots;
+        public Item[] items;
 
-        private PlayerInvoker playerInvoker;
-        private PlayerMovement playerMovement;
-
-        private void Awake()
+        void Awake()
         {
-            // Инициализация компонентов
-            playerMovement = new PlayerMovement();
-            playerInvoker = new PlayerInvoker(player, cameraPosition, playerMovement);
-            playerControls = new PlayerControls();
+            foreach (var altarSlot in altarSlots)
+            {
+                altarSlot.Initialize(playerInteraction);
+            }
 
-            // Связывание компонентов
-            inputListener.Initialize(playerInvoker, playerControls);
+            foreach (var item in items)
+            {
+                item.Initialize(playerInteraction);
+            }
         }
     }
 }

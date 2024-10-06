@@ -6,7 +6,7 @@ namespace _Source.GameActorsManagers.HorrorSystem.SoundHorror
     {
         public void ActivateHorror()
         {
-            AudioManager.instance.Play("Steps");
+            AudioManager.instance.Play("Horror");
         }
     }
 }
