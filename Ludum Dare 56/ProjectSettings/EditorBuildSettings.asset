@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/StartScene.unity
+    guid: 483d9e2e6cb91b24b9c46f433f13add1
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/SashaScen.unity
+    guid: bd2610a87ddf12844a9d3320e4d6da2c
   m_configObjects: {}
