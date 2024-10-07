@@ -10,7 +10,7 @@ namespace _Source.UI
     {
         [field: SerializeField] public GameObject CollectedItemsWindow { get; private set; }
         [field: SerializeField] public GameObject WinWindow { get; private set; }
-        [SerializeField] private float fadeDuration = 2.0f; // Длительность исчезновения
+        [SerializeField] private float fadeDuration = 1.0f; // Длительность появления
 
         private TextMeshProUGUI _textForItem;
         private TaskCount _taskCount;
@@ -54,10 +54,10 @@ namespace _Source.UI
             // Активируем окно
             WinWindow.SetActive(true);
 
-            // Плавное исчезновение окна с использованием альфа-канала
-            _winWindowCanvasGroup.DOFade(0f, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
+            // Плавное появление окна с использованием альфа-канала
+            _winWindowCanvasGroup.DOFade(1f, fadeDuration).SetEase(Ease.InOutQuad).OnComplete(() =>
             {
-                // По завершении исчезновения переходим на другую сцену
+                // По завершении появления переходим на другую сцену
                 SceneChanger.ChangeScene("GameOverScene");
             });
         }

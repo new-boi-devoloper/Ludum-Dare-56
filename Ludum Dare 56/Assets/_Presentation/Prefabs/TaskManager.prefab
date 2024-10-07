@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 8949107463932076041}
   - component: {fileID: 2460598191862950071}
   - component: {fileID: 3734827093586291294}
-  - component: {fileID: 2422983102540584787}
   m_Layer: 0
-  m_Name: CanvasListener
+  m_Name: TaskManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -60,17 +59,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e08637de3d10bbe4e90abda7b576a4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2422983102540584787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5311584425788251239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97862e5479d348399f49d0198e29c06b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <CollectedItemsWindow>k__BackingField: {fileID: 0}
-  <WinWindow>k__BackingField: {fileID: 0}

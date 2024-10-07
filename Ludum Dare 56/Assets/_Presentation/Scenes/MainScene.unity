@@ -821,21 +821,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2422983102540584787, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
-      propertyPath: <WinWindow>k__BackingField
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2422983102540584787, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
-      propertyPath: <CollectedItemsWindow>k__BackingField
-      value: 
-      objectReference: {fileID: 1071377108}
     - target: {fileID: 2460598191862950071, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
       propertyPath: firstPerson
       value: 
       objectReference: {fileID: 1433849496}
     - target: {fileID: 5311584425788251239, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
       propertyPath: m_Name
-      value: CanvasListener
+      value: TaskManager
       objectReference: {fileID: 0}
     - target: {fileID: 8949107463932076041, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
       propertyPath: m_LocalPosition.x
@@ -877,8 +869,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2422983102540584787, guid: 296af653bca396a40a6aee6239ad3243, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
