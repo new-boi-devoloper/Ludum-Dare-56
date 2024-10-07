@@ -1,36 +1,41 @@
 ﻿using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace _Source.UI
 {
-    public class UIManager: MonoBehaviour
+    public class UIManager : MonoBehaviour
     {
-        [field:SerializeField] public GameObject ItemCount { get; private set; }
-        private TextMeshProUGUI textforitem;
-
+        [field: SerializeField] public GameObject CollectedItemsWindow { get; private set; }
+        [field: SerializeField] public GameObject WinWindow { get; private set; }
+        
+        private TextMeshProUGUI _textForItem;
         private TaskCount _taskCount;
 
         void OnEnable()
         {
             TaskCount.onChangeItemCount += ChangeItemsUI;
+            GameManager.OnWin += ShowWinWindow;
         }
 
         void OnDisable()
         {
             TaskCount.onChangeItemCount -= ChangeItemsUI;
+            GameManager.OnWin -= ShowWinWindow;
         }
 
         void Start()
         {
-            textforitem = ItemCount.GetComponentInChildren<TextMeshProUGUI>();
+            _textForItem = CollectedItemsWindow.GetComponentInChildren<TextMeshProUGUI>();
         }
 
-
         void ChangeItemsUI(int items)
-        { 
-            textforitem.text = $"Собрано предметов: {items}/5";
+        {
+            _textForItem.text = $"Собрано предметов: {items}/5";
+        }
+
+        void ShowWinWindow()
+        {
+            WinWindow.SetActive(true);
         }
     }
 }

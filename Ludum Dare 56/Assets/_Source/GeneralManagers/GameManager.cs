@@ -1,18 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static event Action OnWin;
+
+    private void OnEnable()
     {
-        
+        TaskCount.onChangeItemCount += ChangeItemCount;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        TaskCount.onChangeItemCount += ChangeItemCount;
+    }
+
+    private void ChangeItemCount(int items)
+    {
+        if (items == 5)
+        {
+            OnWin?.Invoke();
+        }
     }
 }
