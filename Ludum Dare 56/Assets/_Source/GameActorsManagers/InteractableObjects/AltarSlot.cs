@@ -7,6 +7,7 @@ public class AltarSlot : MonoBehaviour, IIteractable
 {
     public bool Occupied { get; private set; }
     private IInteractionController interactionController;
+    
     public void Initialize(IInteractionController interactionController)
     {
         this.interactionController = interactionController;
