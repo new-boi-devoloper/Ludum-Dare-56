@@ -16,6 +16,7 @@ public class GamePause : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             firstPerson.playerCanMove = false;
+            firstPerson.enableHeadBob = false;
         }
     }
 }

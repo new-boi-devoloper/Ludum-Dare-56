@@ -1,28 +1,47 @@
+using DG.Tweening;
 using UnityEngine;
 
-public class Door : MonoBehaviour, IIteractable
+namespace _Source.GameActorsManagers.InteractableObjects
 {
-    public Animator mAnimator;
-    public bool isOpen;
-
-    private void Start()
+    public class Door : MonoBehaviour, IIteractable
     {
-        if (isOpen)
-            mAnimator.SetBool("IsOpen", true);
-    }
+        [SerializeField] private Transform doorParent; // Родительский объект, который будет поворачиваться
+        [SerializeField] private float openAngle = 90f; // Угол открытия двери
+        [SerializeField] private float openDuration = 1f; // Длительность открытия/закрытия двери
 
-    public string GetDescription()
-    {
-        if (isOpen) return "Press [E] to close";
-        return "Press [E] to open";
-    }
+        private bool _isOpen;
+        private Vector3 _initialRotation;
 
-    public void Interact()
-    {
-        isOpen = !isOpen;
-        if (isOpen)
-            mAnimator.SetBool("IsOpen", true);
-        else
-            mAnimator.SetBool("IsOpen", false);
+        private void Start()
+        {
+            // Сохраняем начальное вращение двери
+            _initialRotation = doorParent.localEulerAngles;
+        }
+
+        public string GetDescription()
+        {
+            return _isOpen ? "Press [E] to close" : "Press [E] to open";
+        }
+
+        public void Interact()
+        {
+            _isOpen = !_isOpen;
+            RotateDoor(_isOpen);
+        }
+
+        private void RotateDoor(bool open)
+        {
+            float targetAngle = open ? openAngle : 0f;
+            doorParent.DOLocalRotate(new Vector3(_initialRotation.x, _initialRotation.y + targetAngle, _initialRotation.z), openDuration)
+                .SetEase(Ease.InOutSine)
+                .OnComplete(() =>
+                {
+                    if (!open)
+                    {
+                        // Возвращаем дверь в исходное положение
+                        doorParent.localEulerAngles = _initialRotation;
+                    }
+                });
+        }
     }
 }

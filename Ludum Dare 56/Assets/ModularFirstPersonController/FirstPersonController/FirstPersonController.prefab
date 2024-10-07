@@ -165,7 +165,7 @@ MonoBehaviour:
   holdToZoom: 1
   zoomKey: 324
   zoomFOV: 30
-  zoomStepTime: 5
+  zoomStepTime: 10
   playerCanMove: 1
   walkSpeed: 5
   maxVelocityChange: 10
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4da758dfc4f6d4644a02bd11bba34975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementThreshold: 0.05
+  movementThreshold: 0
 --- !u!1 &8822173552807817599
 GameObject:
   m_ObjectHideFlags: 0

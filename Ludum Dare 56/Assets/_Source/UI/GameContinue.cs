@@ -12,5 +12,6 @@ public class GameContinue : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
         firstPerson.playerCanMove = true;
+        firstPerson.enableHeadBob = true;
     }
 }
