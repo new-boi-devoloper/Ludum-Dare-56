@@ -1,28 +1,32 @@
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class TaskCount : MonoBehaviour
 {
-    [SerializeField] private List<Item> Item = new List<Item>();
-    [SerializeField] private TMP_Text text;
-
-    private int count;
-    private void Update()
+    public static event Action<int> onChangeItemCount; 
+    
+    private int itemPlacedCount = 0; // Счетчик размещенных предметов
+    
+    private void OnEnable()
     {
-        // if (Item[0].onAltar)
-        // {
-        //    count = 1;
-        // }
-        // if (Item[1].onAltar)
-        // {
-        //     count = 2;
-        // }
-        // if (Item[2].onAltar)
-        // {
-        //     count = 3;
-        // }
-        // text.text = $"Предметов в Алтаре {count}";
+        // Подписываемся на событие OnItemPlaced
+        AltarSlot.OnItemPlaced += IncrementItemPlacedCount;
+    }
+
+    private void OnDisable()
+    {
+        // Отписываемся от события при деактивации объекта
+        AltarSlot.OnItemPlaced -= IncrementItemPlacedCount;
+    }
+
+    // Метод, вызываемый при размещении предмета
+    private void IncrementItemPlacedCount()
+    {
+        itemPlacedCount++; // Увеличиваем счетчик
+        onChangeItemCount?.Invoke(itemPlacedCount);
     }
 }

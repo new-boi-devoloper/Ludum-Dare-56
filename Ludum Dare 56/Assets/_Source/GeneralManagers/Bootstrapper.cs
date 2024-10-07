@@ -1,15 +1,15 @@
 ﻿using _Source.PlayerScripts;
 using _Source.TestPlayerScripts;
+using _Source.UI;
 using UnityEngine;
 
 namespace _Source.GeneralManagers
 {
     public class Bootstrapper : MonoBehaviour
     {
-        public PlayerInteraction playerInteraction;
-        public AltarSlot[] altarSlots;
-        public Item[] items;
-
+        [SerializeField] private PlayerInteraction playerInteraction;
+        [SerializeField] private AltarSlot[] altarSlots;
+        [SerializeField] private Item[] items;
         void Awake()
         {
             foreach (var altarSlot in altarSlots)
@@ -22,5 +22,6 @@ namespace _Source.GeneralManagers
                 item.Initialize(playerInteraction);
             }
         }
+        
     }
 }

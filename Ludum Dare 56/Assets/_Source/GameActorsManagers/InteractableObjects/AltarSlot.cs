@@ -1,38 +1,53 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using _Source.TestPlayerScripts.InteractionSystem;
 using UnityEngine;
 
 public class AltarSlot : MonoBehaviour, IIteractable
 {
-    public bool Occupied { get; private set; }
-    private IInteractionController interactionController;
+     public static event Action OnItemPlaced; // Событие, вызываемое при размещении предмета
     
-    public void Initialize(IInteractionController interactionController)
-    {
-        this.interactionController = interactionController;
-    }
-
-    public void Interact()
-    {
-        if (!Occupied && interactionController.HeldItem != null)
+        public bool Occupied { get; private set; } // Свойство, указывающее, занят ли слот
+    
+        private IInteractionController interactionController;
+    
+        // Инициализация контроллера взаимодействия
+        public void Initialize(IInteractionController interactionController)
         {
-            PlaceItem(interactionController.HeldItem);
+            this.interactionController = interactionController;
         }
-    }
-
-    public string GetDescription()
-    {
-        return Occupied ? "Slot is occupied" : "Place item here";
-    }
-
-    private void PlaceItem(Item item)
-    {
-        item.transform.position = transform.position;
-        item.transform.rotation = transform.rotation;
-        item.SetHeld(false);
-        item.SetInteractable(false); // Отключаем взаимодействие с предметом после размещения
-        Occupied = true;
-        interactionController.HeldItem = null;
-    }
+    
+        // Метод взаимодействия с объектом
+        public void Interact()
+        {
+            if (!Occupied && interactionController.HeldItem != null)
+            {
+                PlaceItem(interactionController.HeldItem);
+            }
+        }
+    
+        // Получение описания слота
+        public string GetDescription()
+        {
+            return Occupied ? "Slot is occupied" : "Place item here";
+        }
+    
+        // Метод размещения предмета в слоте
+        private void PlaceItem(Item item)
+        {
+            // Установка позиции и вращения предмета
+            item.transform.position = transform.position;
+            item.transform.rotation = transform.rotation;
+    
+            // Обновление состояния предмета
+            item.SetHeld(false);
+            item.SetInteractable(false); // Отключаем взаимодействие с предметом после размещения
+            
+            Occupied = true; // Обозначаем слот как занятый
+            interactionController.HeldItem = null; // Убираем удерживаемый предмет
+    
+            // Вызываем событие OnItemPlaced
+            OnItemPlaced?.Invoke();
+        }
 }
