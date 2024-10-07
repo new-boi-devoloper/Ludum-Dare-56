@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52d8c7017bb35624f86c5040c3181974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadSceneName: SashaScen
+  LoadSceneName: MainScene
 --- !u!1 &109150216
 GameObject:
   m_ObjectHideFlags: 0

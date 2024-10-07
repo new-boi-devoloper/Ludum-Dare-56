@@ -6,7 +6,7 @@ namespace _Source.GameActorsManagers.HorrorSystem.CreatureSound
     public class TriggerUnitZone : MonoBehaviour
     {
         private HorrorUnitSlot _horrorUnitSlot;
-
+        private bool _isTriggered = false;
         private void Start()
         {
             // Ищем дочерний объект с компонентом HorrorUnitSlot
@@ -15,9 +15,11 @@ namespace _Source.GameActorsManagers.HorrorSystem.CreatureSound
 
         private void OnTriggerEnter(Collider other)
         {
-            if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject)) ;
+            if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject) &&
+                _isTriggered == false) 
             {
                 _horrorUnitSlot.ActivateHorror();
+                _isTriggered = true;
             }
         }
     }

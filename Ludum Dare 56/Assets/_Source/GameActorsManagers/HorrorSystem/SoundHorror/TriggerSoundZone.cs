@@ -10,6 +10,7 @@ using UnityEngine;
 public class TriggerSoundZone : MonoBehaviour
 {
     private HorrorSoundSlot _horrorSoundSlot;
+    private bool _isTriggered = false;
 
     private void Start()
     {
@@ -19,9 +20,11 @@ public class TriggerSoundZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject))
+        if (LayerMaskCheck.ContainsLayer(LayerMask.GetMask("Player"), other.gameObject) &&
+            _isTriggered == false)
         {
             _horrorSoundSlot.ActivateHorror();
+            _isTriggered = true;
         }
     }
 }
