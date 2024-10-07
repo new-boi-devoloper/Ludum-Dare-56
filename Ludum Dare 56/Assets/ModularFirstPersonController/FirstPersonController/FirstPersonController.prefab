@@ -897,7 +897,7 @@ Transform:
   m_GameObject: {fileID: 8822173552807817599}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.9666812, y: 0.9918101, z: -2.0945048}
+  m_LocalPosition: {x: -0.11, y: 0.37, z: -0.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -917,7 +917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: Horror
-    clip: {fileID: 8300000, guid: 1bd6e5b4ce3c946f4a3f8f53a207ec93, type: 3}
+    clip: {fileID: 8300000, guid: 6cf1b99ab6dfb4126b558c1fc377f879, type: 3}
     volume: 1
     pitch: 1
     loop: 0
