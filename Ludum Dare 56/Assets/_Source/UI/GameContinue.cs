@@ -11,5 +11,6 @@ public class GameContinue : MonoBehaviour
         Time.timeScale = 1;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = false;
+        firstPerson.playerCanMove = true;
     }
 }
