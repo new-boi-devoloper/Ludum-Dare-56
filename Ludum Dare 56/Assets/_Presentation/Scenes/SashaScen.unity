@@ -2021,6 +2021,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5394870221701903262, guid: 07409c6fb1343254c8613fdd8e8d2ff9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7933061458761472185, guid: 07409c6fb1343254c8613fdd8e8d2ff9, type: 3}
       propertyPath: m_Name
       value: Pause/Options
