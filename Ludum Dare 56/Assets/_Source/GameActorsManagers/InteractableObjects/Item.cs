@@ -6,7 +6,6 @@ public class Item : MonoBehaviour, IIteractable
 {
     [SerializeField] private string name;
     [SerializeField] private Transform pointForItem;
-    [SerializeField] private float rotationAngle;
 
     private bool isHeld = false;
     private bool isInteractable = true;
