@@ -6,6 +6,7 @@ public class Item : MonoBehaviour, IIteractable
 {
     [SerializeField] private string name;
     [SerializeField] private Transform pointForItem;
+    [SerializeField] private float rotationAngle;
 
     private bool isHeld = false;
     private bool isInteractable = true;
@@ -15,6 +16,7 @@ public class Item : MonoBehaviour, IIteractable
     {
         this.interactionController = interactionController;
     }
+    
 
     private void Update()
     {
