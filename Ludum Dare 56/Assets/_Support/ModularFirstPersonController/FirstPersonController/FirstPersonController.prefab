@@ -1136,7 +1136,7 @@ GameObject:
   - component: {fileID: 1819356556960140600}
   - component: {fileID: 4522279739949415576}
   m_Layer: 7
-  m_Name: AuidoMeneger
+  m_Name: AuidoManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
