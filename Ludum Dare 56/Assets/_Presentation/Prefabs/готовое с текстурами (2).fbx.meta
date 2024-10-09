@@ -5,120 +5,315 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 3DModel_Retopo
+    second: {fileID: 2100000, guid: 25994c0be4a98d748ad02f2c63bda49f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dirty Cedar White Wood Container
+    second: {fileID: 2100000, guid: 13c976d2f255c12489d0d29296281713, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DirtyBlanket
+    second: {fileID: 2100000, guid: a411700980f6a6f489ba11abae246635, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElectricalBox1
+    second: {fileID: 2100000, guid: ab2ff2d044adb004ab2f4385d9b7cf87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: bdb7c95a9d19f7d4f8ec6d9c2698ebf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron Touched
+    second: {fileID: 2100000, guid: 0cddde0b96906c14daf878dab4649163, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron Touched.001
+    second: {fileID: 2100000, guid: 7aa7067e0b3bd4a48a54be8daf6bd4f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron Touched.002
+    second: {fileID: 2100000, guid: 9babb3b815a2d5d4e9d6d6167fa6307c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: ce4a0d02cd1073c4abaa643fbc0501d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soup_Soup
+    second: {fileID: 2100000, guid: c201b39a72571734a91eecbfa3d1d76a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soup_Wood
+    second: {fileID: 2100000, guid: b61b0409b9038244d96b12b7bc99d0de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Toilette.003
+    second: {fileID: 2100000, guid: 2c5a12f4500349f48b7b3db7d2bca173, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood Wall.001
+    second: {fileID: 2100000, guid: 2fe41e6a668a878428a587060e86df3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bath.001
+    second: {fileID: 2100000, guid: e12e01340ff296d4b98b327ce7ded503, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bed
+    second: {fileID: 2100000, guid: 0a6916fd28d721241b3a56aaccaecd1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover
+    second: {fileID: 2100000, guid: 989d691d88e4f9141b769a21cabecbcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.001
+    second: {fileID: 2100000, guid: 918f46feacd1a5e4e9f4fa4d75d41f08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.002
+    second: {fileID: 2100000, guid: cc447475a1ebf7d40b4f5f0ab1ffaed2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.003
+    second: {fileID: 2100000, guid: 8e54e88b40580f44588415772a3450ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.004
+    second: {fileID: 2100000, guid: ccb99d86a657e374a9a224ba4f7479ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.005
+    second: {fileID: 2100000, guid: 9fdd77bb0ad71274288296139393ecfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.006
+    second: {fileID: 2100000, guid: 21fc43f2cbc72d94b855c166e4c3cb8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: book cover.007
+    second: {fileID: 2100000, guid: 4055a8464a4152042a407593d6ab7e63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: internal.001
+    second: {fileID: 2100000, guid: 74981d21971867649b58e150ddcd2444, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iron galvanized.001
+    second: {fileID: 2100000, guid: 4c9680e4688957a4590841ce646e2f71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: painted_wooden_stool
+    second: {fileID: 2100000, guid: 6bb8c1ab44f1a19469a7864a2d46e35b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic_bottle_gallon
+    second: {fileID: 2100000, guid: 00249c36b82bcbd4e919d172377951c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: russian_food_cans_01
+    second: {fileID: 2100000, guid: 3a25912ef8dc4e047b5df65c5df6bcf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shiny metal.001
+    second: {fileID: 2100000, guid: e39131610d16524438015ae3980ed131, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper
+    second: {fileID: 2100000, guid: 02efffad3fefe71448c211c479871f95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.001
+    second: {fileID: 2100000, guid: 41d6970b74ace8840ba32cbd295af76b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.002
+    second: {fileID: 2100000, guid: 0b3376d2f49bb3f49a24cae5bc18ded3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.003
+    second: {fileID: 2100000, guid: 65d38963c7a6eac4987f4967556a45c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.004
+    second: {fileID: 2100000, guid: 47d4530063b4c3d4585d028157893f07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.005
+    second: {fileID: 2100000, guid: 789cabecfc79aa64aa1d311a557b2946, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.006
+    second: {fileID: 2100000, guid: 97a8c0cbfef497244a0ffb036314fe8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stacked paper.007
+    second: {fileID: 2100000, guid: 7f7b441475dc35546a1c18bd9a22d2b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tv01_1001
+    second: {fileID: 2100000, guid: c26af9a59f965c04091d903a316d5777, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8D28.012"
+    second: {fileID: 2100000, guid: a8d3092f33da2ec42996165b7b7b1d0b, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 3DModel_Retopo
-    second: {fileID: 2800000, guid: f111a40b55478df489543d5adccc103c, type: 3}
+    second: {fileID: 2800000, guid: 6ea4b58d5a8b54142a2488ac4a3ffe7b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 3DModel_Retopo_Roughness
-    second: {fileID: 2800000, guid: 41abd99383ca97a4cbb99f34f4f9f101, type: 3}
+    second: {fileID: 2800000, guid: 567d8c229ccd71946b9f675deef5ba5b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ElectricalBox1
-    second: {fileID: 2800000, guid: 8bee890a954d2b046a677d7fa3c93cfd, type: 3}
+    second: {fileID: 2800000, guid: d20fcec0b34e0f142a7f579261b21fb2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Used Old Wood Container_BaseColor
-    second: {fileID: 2800000, guid: d750f6b860aa59543ad5824559af5415, type: 3}
+    second: {fileID: 2800000, guid: 46708c6c355b91d4f8b7deb2d6742ec0, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Used Old Wood Container_Metallic
-    second: {fileID: 2800000, guid: 2a722800d54d76142a646724892fb9a2, type: 3}
+    second: {fileID: 2800000, guid: c351b4f8a7ac0e34fa81a33f267fd2b6, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Used Old Wood Container_Normal
-    second: {fileID: 2800000, guid: f02e826dcaabd0f45ab8a0c867df9459, type: 3}
+    second: {fileID: 2800000, guid: c34b8351a5351d946aebb173144f04f1, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Used Old Wood Container_Roughness
-    second: {fileID: 2800000, guid: bd509a5ed3289a44da4a2ddb59759d16, type: 3}
+    second: {fileID: 2800000, guid: ab77756dde1516c49be2e8edaa6d3641, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: bed_albedo
-    second: {fileID: 2800000, guid: 140bfc30e6b33af4eadd36acb4a1321b, type: 3}
+    second: {fileID: 2800000, guid: aa751fc30e8d2a043b66c7fb2b939f95, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: bed_metallic
-    second: {fileID: 2800000, guid: 9157375e4fede0643bbc8742269b19d5, type: 3}
+    second: {fileID: 2800000, guid: 65aa4875aeb5e4c459ae26a11b6d2ed4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: bed_normal
-    second: {fileID: 2800000, guid: bdaa697ce3d97a04c8114ad051e06785, type: 3}
+    second: {fileID: 2800000, guid: 7336e1515ff3d3c42863ebd13781940c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: bed_roughness
-    second: {fileID: 2800000, guid: 1f09ddca17b76a94ab2afc260b7d1d62, type: 3}
+    second: {fileID: 2800000, guid: 121cb4a2f32686d4895dd35d7c424001, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: painted_wooden_stool_diff_4k
-    second: {fileID: 2800000, guid: e74ad7dc54941b04784dc870ca35a81c, type: 3}
+    second: {fileID: 2800000, guid: c56c41bb6548fb848bc25bcb45f13634, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: painted_wooden_stool_nor_gl_4k
-    second: {fileID: 2800000, guid: a470146f58a027047814e8d42021979d, type: 3}
+    second: {fileID: 2800000, guid: 4972fd7b58976c34b85a8dc1989c9ab4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: painted_wooden_stool_rough_4k
-    second: {fileID: 2800000, guid: 0944c038be7a5d0448081999ebf8e7b2, type: 3}
+    second: {fileID: 2800000, guid: 0b410514315917647b78b26ad503fbea, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: plastic_bottle_gallon_diff_8k
-    second: {fileID: 2800000, guid: 907d1f406e8f31045bbc00d22109d4ba, type: 3}
+    second: {fileID: 2800000, guid: 48b519ce9f1768842a917caedf0f8d85, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: plastic_bottle_gallon_nor_gl_8k
-    second: {fileID: 2800000, guid: 990baadef187472448487ffb272d7141, type: 3}
+    second: {fileID: 2800000, guid: 03f892f0823019d45be45ddefb1c082f, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: plastic_bottle_gallon_rough_8k
-    second: {fileID: 2800000, guid: 3c7b3854b40911e4b81239290d31a366, type: 3}
+    second: {fileID: 2800000, guid: e5c394e4c26216a489094f93d144d5da, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: russian_food_cans_01_diff_4k
-    second: {fileID: 2800000, guid: 3a6245f312e25954b889abad78a329f6, type: 3}
+    second: {fileID: 2800000, guid: 8af56ff816883ae4097a651b8019cae4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: russian_food_cans_01_metallic_4k
-    second: {fileID: 2800000, guid: a44064e227cb2164798a5aa81a9aabcc, type: 3}
+    second: {fileID: 2800000, guid: dfdac2764b544a140a776f8b0e60be5a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: russian_food_cans_01_nor_gl_4k
-    second: {fileID: 2800000, guid: 6381e6300c199914c8138b1c9875b131, type: 3}
+    second: {fileID: 2800000, guid: 541899edb74598d43b409577e057688a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: russian_food_cans_01_rough_4k
-    second: {fileID: 2800000, guid: 3eee1d27ed3339d4f9b3629410653689, type: 3}
+    second: {fileID: 2800000, guid: 9dbedbc584c55f94797a83f4f56fdad9, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tv01_1001_baseColor
-    second: {fileID: 2800000, guid: 115eaa78a81ff9c47a443cb1fef9e25a, type: 3}
+    second: {fileID: 2800000, guid: 41805358943e0d24991da2cbe46a9142, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: tv01_1001_normal
-    second: {fileID: 2800000, guid: 71a0f362c9654494fae31fe4754266a6, type: 3}
+    second: {fileID: 2800000, guid: 52609076c266a5941912cd729868c66a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
